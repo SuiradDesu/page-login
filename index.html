@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Login</title>
+</head>
+<body>
+  <div id="container-login">
+    <div id="acess">
+      <div id="info">
+        <h2>Faça login para acessar sua conta.</h2>
+        <p>Nós tomamos conta de seus dados.</p>
+        <p>EntryParser - Portal eleito o mais seguro da categoria. 🤩</p>
+      </div>
+      <form action="#">
+        <input type="text" name="name" id="name" placeholder="Nome" required >
+        <input type="email" name="email" id="email" placeholder="Email" required >
+        <input type="password" name="password" id="password" placeholder="Senha" required >
+      </form>
+      <div id="btns">
+        <input type="submit" name="login" id="login" value="Entrar">
+        <input type="submit" name="login" id="login" value="Cadastrar" onclick="cadastrar()">
+      </div>
+      <p id="infoaccess">acessar usando</p>
+      <div id="midias">
+        <img src="img/google.png" alt="acessar usando o google">
+        <img src="img/facebook.png" alt="acessar usando o facebook">
+        <img src="img/apple.png" alt="acessar usando a apple account">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function cadastrar(){
+        window.location.href = 'newaccount.html';
+    }
+  </script>
+</body>
+</html>
